@@ -3,12 +3,16 @@ ProtocolConfig:
   MaxMessageSplit: {{ env "GOPHER_SLACK_MAX_MSGS" | default "2" }}
   AppToken: xapp-{{ decrypt "EOt4mQB+MjRmiv0eWX6ekOYW45MHErd4LmlJNwX4sqseqAQPKeSzr6RMcCJF9Is5b1OqrO5t6G2/3MEYn2i5JK1FbNevxNeJ5zosi5j/2Nx27igIn+MgJpvCF6bkFqNnFR5MaeSkngrwkljij3JqaYwfrtVF357U" }}
   BotToken: xoxb-{{ decrypt "wlWgNs8XUp3mugEdsM1s91ZPqTytB4WtOwiyA3Zje5s5QC0oyaK//1f1OqpWHHW01GPlVH0ZoGF6Di/+ejaCNANI1xiSvEgIHlhNBJmu" }}
+  HearSelf: true
 
 DefaultChannels: [ "general", "random" ]
 
 UserRoster:
   - UserName: Maggie
     UserID: ULMRN6K40
+  - UserName: monster
+    UserID: U04FEBM9YLT
+    BotUser: true
   # - UserName: floyd
   #   UserID: U138KTVCL
   #   BotUser: true
