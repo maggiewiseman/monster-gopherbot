@@ -1,0 +1,15 @@
+---
+Channels: [ "bot-testing", "general" ]
+## Some plugins, like 'ping', are nice to have in all channels
+AllChannels: false
+Help:
+- Keywords: [ "roll", "dice" ]
+  Helptext:
+  - (bot), roll a dNN - roll a dungeons and dragons die, use a really number
+## Command matches can be matched when the user addresses the robot directly,
+## either in a direct message, or by giving it's name or alias. The Regex
+## is a Go regular expression, easily developed by using the tool at:
+## https://regex-golang.appspot.com/assets/html/index.html
+CommandMatchers:
+- Regex: '(?i:(?:roll d)([0-9]+))'
+  Command: roll

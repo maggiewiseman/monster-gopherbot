@@ -123,6 +123,9 @@ ExternalPlugins:
     - Name: GOPHER_SETUP_TOKEN
       Value: {{ env "GOPHER_SETUP_TOKEN" }}
 {{ end }}
+  "roll":
+    Description: A trivial plugin for rolling a d20, etc.
+    Path: plugins/roll.rb
 #   "weather":
 #     Description: A plugin that uses OpenWeatherMap to report the weather
 #     Path: plugins/weather.rb
